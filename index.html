@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <section class="contanier-acessibilidade">
+      <section id="topo" class="contanier-acessibilidade">
         <div class="buttons-acessibilidade">
           <button type="button" class="fonte-menor">A-</button>
           <button type="button" class="fonte-maior">A+</button>
@@ -15,7 +15,7 @@
         </div>
         <nav class="nav-acessibilidade">
           <ul>
-            <li><a href="#">Busca</a></li>
+            <li><a href="#pesquisar">Busca</a></li>
             <li><a href="#conteudo">Conteúdo</a></li>
             <li><a href="#rodape">Rodapé</a></li>
             <li><a href="#">Acessibilidade</a></li>
@@ -28,7 +28,7 @@
       <section class="container-menu">
         <img src="./assets/icons/Logo.svg" alt="Logo WE EVENT">
         <a href="#"><img src="./assets/icons/Eventos.svg" alt="Todos os Eventos"></a>
-        <div class="barra-pesquisa">
+        <div id="pesquisar" class="barra-pesquisa">
           <input type="text" placeholder="Buscar artistas e eventos" class="input-pesquisa">
           <button class="botao-pesquisar"><img src="./assets/icons/Search.svg" alt="Pesquisar"></button>
         </div>
@@ -42,6 +42,46 @@
       </section>
     </header>
     <main id="conteudo">
+      <section class="container-eventos">
+        <div class="eventos-principais">
+          <a href="#"><img src="#" alt="#"></a>
+        </div>
+        <div class="carrossel-eventos">
+          <a href="#"><img src="#" alt="#"></a>
+        </div>
+      </section>
+      <section class="container-categorias">
+        <ul class="lista-categorias">
+          <li><a href="#">Shows internacionais</a></li>
+          <li><a href="#">Shows nacionais</a></li>
+          <li><a href="#">Teatro & Comédia</a></li>
+          <li><a href="#">Infantil e Família</a></li>
+          <li><a href="#">Esportes</a></li>
+          <li><a href="#">Lazer e Turismo</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </section>
+      <section class="container-novos_eventos">
+        <h2>Adicionados recentemente</h2>
+        <div class="carrossel-novos_eventos">
+          <div class="card-evento">
+            <img class="img-evento" src="#" alt="Evento #">
+            <h4 class="nome-evento">#</h4>
+            <a href="#"><h5 class="comprar">Comprar</h5></a>
+          </div>
+        </div>
+      </section>
+      <section class="container-alarme">
+        <img src="./assets/icons/alarm.svg" alt="Alarme">
+        <div class="alarme">
+          <h3>TicketAlarm</h3>
+          <div class="pesquisa-ticket">
+            <input type="text" placeholder="Digite seu artista ou evento favorito" class="alarme-ticket">
+            <button class="botao-alarme"><img src="./assets/icons/Search.svg" alt="Adicionar alarme"></button>
+         </div>
+        </div>
+      </section>
+      <a href="#topo"><img src="./assets/icons/Voltar.svg" alt="Voltar ao topo"></a>
     </main>
     <footer id="rodape">
       <section class="container-sobre">
