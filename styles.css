@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+}
+.contanier-acessibilidade{
+    aspect-ratio: 55 / 1;
+}
+.espaco-coluna-start, .espaco-coluna-end{
+    aspect-ratio: 80 / 1;
+}
+.linhas-acessibilidade{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    aspect-ratio: 55 / 1;
+}
+.espaco-linha-acessibilidade-start, .espaco-linha-acessibilidade-end{
+    aspect-ratio: 3 / 1;
+}
+.espaco-linha-acessibilidade-center{
+    aspect-ratio: 25 / 1;
+}
+.fonte-menor, .fonte-maior, .tema-escuro{
+    background: transparent;
+    border: none;
+    flex: 2;
+}
+.buttons-acessibilidade{
+    aspect-ratio: 8/1;
+    flex-wrap: wrap;
+}
+.lista-acessibilidade{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    aspect-ratio: 3/1;
+}
+.lista-acessibilidade a{
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    flex: 2;
+}
+.conainer-banner{
+    aspect-ratio: 8/1;
+}
+#banner1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 15% 85%;
+}
+.espaco-linha-menu-start{
+    aspect-ratio: 3/1;
+}
+.container-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    aspect-ratio: 40/1;
+    gap: 10vh;
+    background: #1E2665;
+}
+#todos-eventos-link{
+    align-content: center;
+}
+.barra-pesquisa{
+    align-content: center;
+    max-width: 80vh;
+    background: white;
+    width: 100%;
+    aspect-ratio: 45/1;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-radius: 3vh;
+}
+.botao-pesquisar{
+    background: transparent;
+    border: none;
+}
+.input-pesquisa{
+    aspect-ratio: 7/1;
+    border: none;
+    width: 92%;
+    border-radius: 3vh;
+    padding-left: 2vh;
+}
+li{
+    list-style-type: none;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    flex: 2;
+}
+.funcionalidades{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    aspect-ratio: 3/1;
+    align-items: center;
+}
+.funcionalidades-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 45px;
+    aspect-ratio: 3/1;
+    align-items: center;
+    margin-left: -5vh;
+}
+.eventos-principais{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.carousel-inner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
