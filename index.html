@@ -4,37 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+     <link href="styles.css" rel="stylesheet">
     <title>We Event</title>
   </head>
   <body>
     <header>
       <section id="topo" class="contanier-acessibilidade">
-        <div class="buttons-acessibilidade">
-          <button type="button" class="fonte-menor">A-</button>
-          <button type="button" class="fonte-maior">A+</button>
-          <button type="button" class="tema-escuro">Contraste</button>
+          <a href="javascript:void(0);" class="iconburger" onclick="hamMenu()">
+            <img src="./assets/icons/burger-solid_w.svg"/>
+          </a>
+          <div id="hamburger-menu">
+            <a href="#ham-amais">A+</a>
+            <a href="#ham-amenos">A-</a>
+            <a href="#ham-escuro">Contraste</a>
+            <a href="#ham-news">Busca[1]</a>
+            <a href="#ham-contact">Conteúdo[2]</a>
+            <a href="#ham-about">Rodapé[3]</a>
+            <a href="#ham-about">Acessibilidade</a>
         </div>
-        <nav class="nav-acessibilidade">
-          <ul>
-            <li><a href="#pesquisar">Busca</a></li>
-            <li><a href="#conteudo">Conteúdo</a></li>
-            <li><a href="#rodape">Rodapé</a></li>
-            <li><a href="#">Acessibilidade</a></li>
-          </ul>
-        </nav>
+        <div class="espaco-coluna-start"> </div>
+        <div class="linhas-acessibilidade">
+            <div class="espaco-linha-acessibilidade-start"> </div>
+            <div class="buttons-acessibilidade">
+              <button type="button" class="fonte-menor">A-</button>
+              <button type="button" class="fonte-maior">A+</button>
+              <button type="button" class="tema-escuro">Contraste</button>
+            </div>
+            <div class="espaco-linha-acessibilidade-center"> </div>
+            <nav class="nav-acessibilidade">
+                <ul class="lista-acessibilidade">
+                <li><a href="#pesquisar">Busca[1]</a></li>
+                <li><a href="#conteudo">Conteúdo[2]</a></li>
+                <li><a href="#rodape">Rodapé[3]</a></li>
+                <li><a href="#">Acessibilidade</a></li>
+              </ul>
+            </nav>
+        </div>
+        <div class="espaco-coluna-end"> </div>
       </section>
       <section class="conainer-banner">
-        <a href="#"><img src="#" alt="evento-principal-descricao"></a>
+        <img id="banner1" src="./assets/img/shows.jpg" alt="evento-principal-descricao">
+        <a href="#"></a>
       </section>
       <section class="container-menu">
-        <img src="./assets/icons/Logo.svg" alt="Logo WE EVENT">
-        <a href="#"><img src="./assets/icons/Eventos.svg" alt="Todos os Eventos"></a>
+        <div class="espaco-linha-menu-start"> </div>
+        <img id="wewent-img" src="./assets/icons/Logo.svg" alt="Logo WE EVENT">
+        <a href="#" id="todos-eventos-link"><img id="eventos-img" src="./assets/icons/Eventos.svg" alt="Todos os Eventos"></a>
         <div id="pesquisar" class="barra-pesquisa">
           <input type="text" placeholder="Buscar artistas e eventos" class="input-pesquisa">
           <button class="botao-pesquisar"><img src="./assets/icons/Search.svg" alt="Pesquisar"></button>
         </div>
         <div class="funcionalidades">
-          <ul>
+            <ul class="funcionalidades-list">
             <li><a href=""><img src="./assets/icons/Login.svg" alt="Login"></a></li>
             <li><a href=""><img src="./assets/icons/Favoritos.svg" alt="Seus Favoritos"></a></li>
             <li><a href=""><img src="./assets/icons/Linguagem.svg" alt="Mudar Linguagem"></a></li>
@@ -45,12 +66,11 @@
     <main id="conteudo">
       <section class="container-eventos">
         <div class="eventos-principais">
-          <a href="#"><img src="./assets/img/event_main_1.png" alt="#"></a>
-          <a href="#"><img src="./assets/img/event_main_2.png" alt="#"></a>
-        </div>
-        <div class="carrossel-eventos">
+          <a href="#"><img id="evento1-img" src="./assets/img/event_main_1.png" alt="#"></a>
+          <a href="#"><img id="evento2-img" src="./assets/img/event_main_2.png" alt="#"></a>
+          <div class="carrossel-eventos">
           <!-- Carrossel com bootstrap -->
-          <div id="carouselExampleIndicators" class="carousel slide">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -58,13 +78,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/img/event_main_carrosel_1.png" class="d-block w-100" alt="...">
+                <img src="./assets/img/event_main_carrosel_3.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="./assets/img/event_main_carrosel_2.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/event_main_carrosel_3.png" class="d-block w-100" alt="...">
+                <img src="./assets/img/card3.webp" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -76,6 +96,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </div>
         </div>
       </section>
       <section class="container-categorias">
@@ -89,50 +110,63 @@
           <li><a href="#">Newsletter</a></li>
         </ul>
       </section>
+        <div class="interseccao">
+            <h2>Adicionados recentemente</h2>
+        </div>
       <section class="container-novos_eventos">
-        <h2>Adicionados recentemente</h2>
-        <div class="carrossel-novos_eventos">
-          <div class="card-evento">
-            <img class="img-evento" src="#" alt="Evento #">
-            <h4 class="nome-evento">#</h4>
-            <a href="#"><h5 class="comprar">Comprar</h5></a>
+        <div class="carrossel-novos_eventos1">
+          <div class="card-evento1">
+            <img class="img-evento1" src="./assets/img/card1.webp" alt="Evento #">
           </div>
+          <h4 class="nome-evento">Monters de Rock</h4>
+          <a href="#"><h5 class="comprar">Comprar</h5></a>
+        </div>
+          <div class="carrossel-novos_eventos2">
+          <div class="card-evento2">
+            <img class="img-evento2" src="./assets/img/card2.webp" alt="Evento #">
+          </div>
+          <h4 class="nome-evento">Bocceli in Concert</h4>
+          <a href="#"><h5 class="comprar">Comprar</h5></a>
+        </div>
+          <div class="carrossel-novos_eventos3">
+          <div class="card-evento3">
+            <img class="img-evento3" src="./assets/img/card5.webp" alt="Evento #">
+          </div>
+          <h4 class="nome-evento">Monsters Kiss</h4>
+          <a href="#"><h5 class="comprar">Comprar</h5></a>
+        </div>
+          <div class="carrossel-novos_eventos4">
+          <div class="card-evento4">
+            <img class="img-evento4" src="./assets/img/card4.webp" alt="Evento #">
+          </div>
+          <h4 class="nome-evento">Monsters Ozzy</h4>
+          <a href="#"><h5 class="comprar">Comprar</h5></a>
         </div>
       </section>
-      <section class="container-alarme">
-        <img src="./assets/icons/alarm.svg" alt="Alarme">
-        <div class="alarme">
-          <h3>TicketAlarm</h3>
-          <div class="pesquisa-ticket">
-            <input type="text" placeholder="Digite seu artista ou evento favorito" class="alarme-ticket">
-            <button class="botao-alarme"><img src="./assets/icons/Search.svg" alt="Adicionar alarme"></button>
-         </div>
-        </div>
-      </section>
-      <a href="#topo"><img src="./assets/icons/Voltar.svg" alt="Voltar ao topo"></a>
     </main>
     <footer id="rodape">
       <section class="container-sobre">
-        <div>
+          <div class="colunas-sobre">
           <h4  class="titulo-sobre">Sobre a WE EVENT</h4>
           <ul class="lista-sobre">
             <li><a href="#">Quem somos</a></li>
             <li><a href="#">Termos e Condições Gerais</a></li>
             <li><a href="#">WE EVENT no mundo</a></li>
             <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#"> </a></li>
           </ul>
         </div>
-        <div>
+        <div class="colunas-sobre">
           <h4  class="titulo-sobre">Serviço ao cliente</h4>
           <ul class="lista-sobre">
             <li><a href="#">Atendimento ao Cliente</a></li>
             <li><a href="#">Pontos de Venda e Retirada</a></li>
             <li><a href="#">Formas de Pagamento</a></li>
-            <li><a href="#">Meia Entrada</a></li>
+           
             <li><a href="#">Retirada de Ingressos por Terceiros</a></li>
           </ul>
         </div>
-        <div>
+        <div class="colunas-sobre">
           <h4  class="titulo-sobre">Mais WE EVENT</h4>
           <ul class="lista-sobre">
             <li><a href="#">Newsletter</a></li>
@@ -141,23 +175,21 @@
             <li><a href="#">Assuntos de Imprensa</a></li>
           </ul>
         </div>
-        <div>
+        <div class="colunas-sobre">
           <h4  class="titulo-sobre">WE EVENT.PASS</h4>
           <ul class="lista-sobre">
             <li><a href="#">O que é</a></li>
             <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Ouvidoria</a></li>
+            <li><a href="#">Pergunte a um gerente</a></li>
           </ul>
-        </div>
-        <div>
-          <h4 class="titulo-sobre">Seguro Ingresso Protegido Premium</h4>
-          <ul class="lista-sobre"><a href="#">Mais informações</a></ul>
         </div>
       </section>
       <section class="container-rodape">
         <img src="./assets/icons/Logo.svg" class="logo" alt="Logo WE EVENT">
         <div class="redes-sociais">
           <h3>Social Media</h3>
-          <ul>
+          <ul class="icones-rodape">
             <li><a href="#"><img src="./assets/icons/Instagram.svg" alt="Instagram"></a></li>
             <li><a href="#"><img src="./assets/icons/Tiktok.svg" alt="Tik-tok"></a></li>
             <li><a href="#"><img src="./assets/icons/Linkedin.svg" alt="Linkedin"></a></li>
@@ -167,5 +199,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script>
+        function hamMenu() {
+          var x = document.getElementById("hamburger-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
   </body>
 </html>
