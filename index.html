@@ -10,6 +10,18 @@
   <body>
     <header>
       <section id="topo" class="contanier-acessibilidade">
+          <a href="javascript:void(0);" class="iconburger" onclick="hamMenu()">
+            <img src="./assets/icons/burger-solid_w.svg"/>
+          </a>
+          <div id="hamburger-menu">
+            <a href="#ham-amais">A+</a>
+            <a href="#ham-amenos">A-</a>
+            <a href="#ham-escuro">Contraste</a>
+            <a href="#ham-news">Busca[1]</a>
+            <a href="#ham-contact">Conteúdo[2]</a>
+            <a href="#ham-about">Rodapé[3]</a>
+            <a href="#ham-about">Acessibilidade</a>
+        </div>
         <div class="espaco-coluna-start"> </div>
         <div class="linhas-acessibilidade">
             <div class="espaco-linha-acessibilidade-start"> </div>
@@ -36,8 +48,8 @@
       </section>
       <section class="container-menu">
         <div class="espaco-linha-menu-start"> </div>
-        <img src="./assets/icons/Logo.svg" alt="Logo WE EVENT">
-        <a href="#" id="todos-eventos-link"><img src="./assets/icons/Eventos.svg" alt="Todos os Eventos"></a>
+        <img id="wewent-img" src="./assets/icons/Logo.svg" alt="Logo WE EVENT">
+        <a href="#" id="todos-eventos-link"><img id="eventos-img" src="./assets/icons/Eventos.svg" alt="Todos os Eventos"></a>
         <div id="pesquisar" class="barra-pesquisa">
           <input type="text" placeholder="Buscar artistas e eventos" class="input-pesquisa">
           <button class="botao-pesquisar"><img src="./assets/icons/Search.svg" alt="Pesquisar"></button>
@@ -54,8 +66,8 @@
     <main id="conteudo">
       <section class="container-eventos">
         <div class="eventos-principais">
-          <a href="#"><img src="./assets/img/event_main_1.png" alt="#"></a>
-          <a href="#"><img src="./assets/img/event_main_2.png" alt="#"></a>
+          <a href="#"><img id="evento1-img" src="./assets/img/event_main_1.png" alt="#"></a>
+          <a href="#"><img id="evento2-img" src="./assets/img/event_main_2.png" alt="#"></a>
           <div class="carrossel-eventos">
           <!-- Carrossel com bootstrap -->
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -131,17 +143,6 @@
           <a href="#"><h5 class="comprar">Comprar</h5></a>
         </div>
       </section>
-<!--      <section class="container-alarme">
-        <img src="./assets/icons/alarm.svg" alt="Alarme">
-        <div class="alarme">
-          <h3>TicketAlarm</h3>
-          <div class="pesquisa-ticket">
-            <input type="text" placeholder="Digite seu artista ou evento favorito" class="alarme-ticket">
-            <button class="botao-alarme"><img src="./assets/icons/Search.svg" alt="Adicionar alarme"></button>
-         </div>
-        </div>
-      </section>
-      <a href="#topo"><img src="./assets/icons/Voltar.svg" alt="Voltar ao topo"></a> -->
     </main>
     <footer id="rodape">
       <section class="container-sobre">
@@ -183,10 +184,6 @@
             <li><a href="#">Pergunte a um gerente</a></li>
           </ul>
         </div>
-<!--        <div class="colunas-sobre">
-          <h4 class="titulo-sobre">Seguro Ingresso Protegido Premium</h4>
-          <ul class="lista-sobre"><a href="#">Mais informações</a></ul>
-        </div>-->
       </section>
       <section class="container-rodape">
         <img src="./assets/icons/Logo.svg" class="logo" alt="Logo WE EVENT">
@@ -202,5 +199,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script>
+        function hamMenu() {
+          var x = document.getElementById("hamburger-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
   </body>
 </html>
